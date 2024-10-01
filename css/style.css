@@ -804,6 +804,8 @@ footer{
     font-weight: 400;
 }
 
+
+
 @media (max-width: 1440px){
     .content{
         padding: 0 90px;
@@ -819,5 +821,89 @@ footer{
 
     .post-content{
         padding: 0 55px 0 10px;
+    }
+}
+
+@media (max-width: 1366px){
+    header{
+        padding: 0 70px;
+    }
+
+    .content {
+        padding: 0 60px;
+    }
+    
+}
+
+
+@media (max-width: 1280px){
+    header{
+        padding: 0 40px;
+    }
+
+    .destaks-container{
+        padding: 0 60px;
+    }
+
+    .testimonials-cards-container{
+        padding: 0 100px;
+    }
+
+    footer{
+        padding: 220px 60px 80px 60px
+    }
+}
+
+@media (max-width: 1024px){
+    header{
+        padding: 0 30px;
+    }
+
+    .presentation-container h3{
+        letter-spacing: 7px;
+    }
+
+    .destaks-container{
+        padding: 0 10px;
+    }
+
+    .signature-text{
+        margin-right: 50px
+    }
+
+    .attorney-img{
+        margin-left: 50px
+    }
+
+    .our-services-content{
+        padding: 0 40px;
+    }
+
+    .content{
+        padding: 0 50px;
+    }
+
+    #square-3{
+        padding: 0 40px;
+    }
+
+    .testimonials-cards-container{
+        padding: 0 50px;
+    }
+
+    .form-content{
+        padding: 120px 30px 60px 30px;
+    }
+
+    .post-content p{
+        font-size: 1rem;
+    }
+
+    .post-date span{
+        font-size: 0.8rem;
+    }
+    
+    footer{
+        padding: 220px 30px 80px 30px;
     }
 }
