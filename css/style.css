@@ -804,3 +804,20 @@ footer{
     font-weight: 400;
 }
 
+@media (max-width: 1440px){
+    .content{
+        padding: 0 90px;
+    }
+
+    #square-3 {
+        padding: 0 60px;
+    }
+
+    .testimonials-cards-container{
+        padding: 0 100px;
+    }
+
+    .post-content{
+        padding: 0 55px 0 10px;
+    }
+}
