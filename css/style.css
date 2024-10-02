@@ -11,7 +11,7 @@
     --cor01: #fff;
     --cor02: #cdba6d;
     --cor03: #c8b050;
-    --cor04: #272d3467;
+    --cor04: rgba(39, 45, 52, 0.788);
     --cor05: #000;
     --cor06: #5c6f87;
     --cor-bg1: #353e47;
@@ -39,7 +39,7 @@ header{
     justify-content: space-between;
     padding: 0px 300px;
     background-color: var(--cor04);
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo{
@@ -524,6 +524,98 @@ li:hover{
     background-image: url('../media/testimonials03.jpg');
 }
 
+.our-advantages-container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../media/background.jpg');
+    background-position: center 60%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.modal-advantages{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+
+.our-advantages-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px;
+    padding: 110px 20px 110px 20px;
+    z-index: 1;
+}
+
+.our-advantages-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-advantages-title h3{
+    font-family: var(--fonte02);
+    color: var(--cor01);
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.our-advantages-title h1{
+    color: var(--cor02);
+    font-size: 3.5rem;
+}
+
+.divider-advantages{
+    border: none;
+    border-top: 3px solid var(--cor02);
+    border-radius: 20px;
+    margin: 10px 0px;
+    width: 5%;
+}
+
+.our-advantages-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.our-advantages-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    width: 350px;
+}
+
+.our-advantages-infos span{
+    color: var(--cor02);
+    font-family: var(--fonte02);
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.our-advantages-infos p{
+    color: var(--cor01);
+    font-family: var(--fonte02);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.adv-border{
+    border-right: 2px solid var(--cor02);
+}
+
 .form-container{
     width: 100%;
     height: 110vh;
@@ -807,6 +899,10 @@ footer{
 
 
 @media (max-width: 1440px){
+    header{
+        padding: 0 70px;
+    }
+
     .content{
         padding: 0 90px;
     }
@@ -825,9 +921,6 @@ footer{
 }
 
 @media (max-width: 1366px){
-    header{
-        padding: 0 70px;
-    }
 
     .content {
         padding: 0 60px;
@@ -849,8 +942,12 @@ footer{
         padding: 0 100px;
     }
 
+    .our-advantages-infos{
+        padding: 0 30px;
+    }
+
     footer{
-        padding: 220px 60px 80px 60px
+        padding: 220px 60px 80px 60px;
     }
 }
 
@@ -868,11 +965,12 @@ footer{
     }
 
     .signature-text{
-        margin-right: 50px
+        margin-right: 50px;
+        margin-bottom: 115px;
     }
 
     .attorney-img{
-        margin-left: 50px
+        margin-left: 50px;
     }
 
     .our-services-content{
@@ -889,6 +987,10 @@ footer{
 
     .testimonials-cards-container{
         padding: 0 50px;
+    }
+
+    .divider-advantages{
+        width: 15%;
     }
 
     .form-content{
@@ -989,6 +1091,10 @@ footer{
 
     #card-1{
         display: none;
+    }
+
+    .our-advantages-container{
+        background-position: 70% 50%;
     }
 
     .form-container{
@@ -1113,9 +1219,17 @@ footer{
     #card-2{
         display: none;
     }
+
+    .our-advantages-title h1{
+        font-size: 3rem;
+    }
+
+    .our-advantages-infos{
+        padding: 0 10px;
+    }
 }
 
-@media (max-width: 415px){
+@media (max-width: 435px){
     header{
         padding: 0 10px;
     }
@@ -1210,6 +1324,28 @@ footer{
     .cards{
         margin-bottom: 20px;
     }
+
+    .our-advantages-content{
+        row-gap: 15px;
+    }
+
+    .our-advantages-title h1{
+        text-align: center;
+    }
+
+    .our-advantages-text{
+        display: grid;
+    }
+
+    .adv-border{
+        border-right: none;
+        border-bottom: 2px solid var(--cor02);
+    }
+
+    .our-advantages-infos{
+        padding: 7px 0px;
+    }
+
 
     .form-container{
         height: 200vh;
